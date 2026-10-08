@@ -34,7 +34,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#1e2229] text-white selection:bg-[#f8be14] selection:text-black font-sans">
+    <div className="min-h-screen bg-transparent text-[#e6edf3] selection:bg-[#4ade80] selection:text-[#04130a] font-sans">
       <Navbar profile={data.profile} />
       <main>
         <Hero profile={data.profile} />

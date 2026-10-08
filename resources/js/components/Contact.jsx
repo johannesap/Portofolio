@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SectionHeader from './SectionHeader';
 
 export default function Contact({ profile }) {
   const [formData, setFormData] = useState({
@@ -66,24 +67,20 @@ export default function Contact({ profile }) {
   };
 
   return (
-    <section id="contact" className="bg-[#252b36] py-20 lg:py-28 border-t border-white/5">
+    <section id="contact" className="bg-[#111820]/70 py-20 lg:py-28 border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-['Oswald'] text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white mb-2">
-            Hubungi <span className="text-[#f8be14]">Saya</span>
-          </h2>
-          <div className="w-16 h-1 bg-[#f8be14] mx-auto mb-4 rounded-full" />
-          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-            Terbuka untuk peluang karir profesional, konsultasi IT training, maupun kolaborasi proyek data science & web
-          </p>
-        </div>
+        <SectionHeader
+          index="07"
+          title="Hubungi"
+          highlight="Saya"
+          subtitle="Terbuka untuk peluang karir profesional, konsultasi IT training, maupun kolaborasi proyek data science & web"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left Column: Direct Info */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <h3 className="font-['Oswald'] text-2xl font-bold text-white mb-3">
+              <h3 className="font-mono text-2xl font-bold text-white mb-3">
                 Mari Terhubung!
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
@@ -93,9 +90,9 @@ export default function Contact({ profile }) {
               <div className="space-y-4 mb-8">
                 <a
                   href={`mailto:${profile?.email}`}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[#1e2229] border border-white/5 hover:border-[#f8be14]/50 transition-all transform hover:translate-x-1"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#161b22] border border-white/5 hover:border-[#4ade80]/50 transition-all transform hover:translate-x-1"
                 >
-                  <div className="w-11 h-11 rounded-full bg-[#f8be14]/10 text-[#f8be14] flex items-center justify-center text-lg flex-shrink-0">
+                  <div className="w-11 h-11 rounded-full bg-[#4ade80]/10 text-[#4ade80] flex items-center justify-center text-lg flex-shrink-0">
                     <i className="fa-solid fa-envelope"></i>
                   </div>
                   <div>
@@ -108,7 +105,7 @@ export default function Contact({ profile }) {
                   href={profile?.socials?.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[#1e2229] border border-white/5 hover:border-[#f8be14]/50 transition-all transform hover:translate-x-1"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#161b22] border border-white/5 hover:border-[#4ade80]/50 transition-all transform hover:translate-x-1"
                 >
                   <div className="w-11 h-11 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0">
                     <i className="fa-brands fa-whatsapp"></i>
@@ -123,7 +120,7 @@ export default function Contact({ profile }) {
                   href={profile?.socials?.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[#1e2229] border border-white/5 hover:border-[#f8be14]/50 transition-all transform hover:translate-x-1"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#161b22] border border-white/5 hover:border-[#4ade80]/50 transition-all transform hover:translate-x-1"
                 >
                   <div className="w-11 h-11 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
                     <i className="fa-brands fa-linkedin-in"></i>
@@ -138,7 +135,7 @@ export default function Contact({ profile }) {
                   href={profile?.socials?.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[#1e2229] border border-white/5 hover:border-[#f8be14]/50 transition-all transform hover:translate-x-1"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#161b22] border border-white/5 hover:border-[#4ade80]/50 transition-all transform hover:translate-x-1"
                 >
                   <div className="w-11 h-11 rounded-full bg-slate-500/10 text-slate-300 flex items-center justify-center text-lg flex-shrink-0">
                     <i className="fa-brands fa-github"></i>
@@ -149,7 +146,7 @@ export default function Contact({ profile }) {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 rounded-xl bg-[#1e2229] border border-white/5">
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-[#161b22] border border-white/5">
                   <div className="w-11 h-11 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg flex-shrink-0">
                     <i className="fa-solid fa-location-dot"></i>
                   </div>
@@ -162,8 +159,8 @@ export default function Contact({ profile }) {
             </div>
 
             {/* CV Download Card */}
-            <div className="bg-[#1e2229] border border-white/10 rounded-2xl p-6">
-              <h4 className="font-['Oswald'] text-lg font-bold text-[#f8be14] mb-2 flex items-center gap-2">
+            <div className="bg-[#161b22] border border-white/10 rounded-2xl p-6">
+              <h4 className="font-mono text-lg font-bold text-[#4ade80] mb-2 flex items-center gap-2">
                 <i className="fa-solid fa-file-arrow-down"></i>
                 <span>Unduh Berkas Curriculum Vitae</span>
               </h4>
@@ -174,7 +171,7 @@ export default function Contact({ profile }) {
                 <a
                   href={profile?.cv_files?.full || '/CV_Johannes_Anugrah_Prawira.pdf'}
                   download
-                  className="inline-flex items-center gap-2 bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] font-semibold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 bg-[#4ade80] hover:bg-[#22c55e] text-[#04130a] font-mono font-semibold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-colors shadow-sm"
                 >
                   <i className="fa-solid fa-file-pdf"></i>
                   <span>Unduh CV Utama</span>
@@ -182,7 +179,7 @@ export default function Contact({ profile }) {
                 <a
                   href={profile?.cv_files?.ats || '/CV_ATS_Johannes_Anugrah_Prawira.pdf'}
                   download
-                  className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/20 font-['Oswald'] font-semibold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-colors"
+                  className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/20 font-mono font-semibold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-colors"
                 >
                   <i className="fa-solid fa-file-lines"></i>
                   <span>Unduh CV ATS</span>
@@ -193,8 +190,8 @@ export default function Contact({ profile }) {
 
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-[#1e2229] border border-white/10 rounded-2xl p-6 sm:p-10 shadow-xl">
-              <h3 className="font-['Oswald'] text-2xl font-bold text-white mb-2">
+            <div className="bg-[#161b22] border border-white/10 rounded-2xl p-6 sm:p-10 shadow-xl">
+              <h3 className="font-mono text-2xl font-bold text-white mb-2">
                 Kirim Pesan Langsung (Laravel Backend API)
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm mb-6">
@@ -221,7 +218,7 @@ export default function Contact({ profile }) {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Nama Lengkap <span className="text-[#f8be14]">*</span>
+                    Nama Lengkap <span className="text-[#4ade80]">*</span>
                   </label>
                   <input
                     type="text"
@@ -230,13 +227,13 @@ export default function Contact({ profile }) {
                     onChange={handleChange}
                     required
                     placeholder="Masukkan nama lengkap Anda"
-                    className="w-full px-4 py-3 bg-[#252b36] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#f8be14] focus:ring-1 focus:ring-[#f8be14] transition-all text-sm"
+                    className="w-full px-4 py-3 bg-[#161b22] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#4ade80] focus:ring-1 focus:ring-[#4ade80] transition-all text-sm"
                   />
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Alamat Email <span className="text-[#f8be14]">*</span>
+                    Alamat Email <span className="text-[#4ade80]">*</span>
                   </label>
                   <input
                     type="email"
@@ -245,7 +242,7 @@ export default function Contact({ profile }) {
                     onChange={handleChange}
                     required
                     placeholder="nama@email.com"
-                    className="w-full px-4 py-3 bg-[#252b36] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#f8be14] focus:ring-1 focus:ring-[#f8be14] transition-all text-sm"
+                    className="w-full px-4 py-3 bg-[#161b22] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#4ade80] focus:ring-1 focus:ring-[#4ade80] transition-all text-sm"
                   />
                 </div>
 
@@ -259,13 +256,13 @@ export default function Contact({ profile }) {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="Peluang Kerja / Kolaborasi / Konsultasi"
-                    className="w-full px-4 py-3 bg-[#252b36] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#f8be14] focus:ring-1 focus:ring-[#f8be14] transition-all text-sm"
+                    className="w-full px-4 py-3 bg-[#161b22] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#4ade80] focus:ring-1 focus:ring-[#4ade80] transition-all text-sm"
                   />
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Pesan <span className="text-[#f8be14]">*</span>
+                    Pesan <span className="text-[#4ade80]">*</span>
                   </label>
                   <textarea
                     name="message"
@@ -274,14 +271,14 @@ export default function Contact({ profile }) {
                     onChange={handleChange}
                     required
                     placeholder="Tuliskan pesan atau detail penawaran Anda di sini..."
-                    className="w-full px-4 py-3 bg-[#252b36] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#f8be14] focus:ring-1 focus:ring-[#f8be14] transition-all text-sm resize-y"
+                    className="w-full px-4 py-3 bg-[#161b22] border border-white/10 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-[#4ade80] focus:ring-1 focus:ring-[#4ade80] transition-all text-sm resize-y"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
                   disabled={status.submitting}
-                  className="w-full py-3.5 px-6 rounded-lg bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] font-bold text-base uppercase tracking-wider transition-all transform hover:-translate-y-0.5 shadow-lg shadow-[#f8be14]/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full py-3.5 px-6 rounded-lg bg-[#4ade80] hover:bg-[#22c55e] text-[#04130a] font-mono font-bold text-base uppercase tracking-wider transition-all transform hover:-translate-y-0.5 shadow-lg shadow-[#4ade80]/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {status.submitting ? (
                     <>

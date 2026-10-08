@@ -119,7 +119,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Back to top button click
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 5. Hero typing effect (cycles through roles)
+  const typedRole = document.getElementById('typedRole');
+  if (typedRole && !reduceMotion) {
+    const roles = [
+      'Informatics Engineering Graduate',
+      'Data Science & Machine Learning',
+      'IT Trainer & Web Developer',
+    ];
+    let roleIdx = 0;
+    let charIdx = roles[0].length;
+    let deleting = true;
+
+    const tick = () => {
+      const role = roles[roleIdx];
+      charIdx += deleting ? -1 : 1;
+      typedRole.textContent = role.slice(0, charIdx);
+
+      let delay = deleting ? 35 : 70;
+      if (!deleting && charIdx === role.length) {
+        deleting = true;
+        delay = 2200;
+      } else if (deleting && charIdx === 0) {
+        deleting = false;
+        roleIdx = (roleIdx + 1) % roles.length;
+        delay = 400;
+      }
+      setTimeout(tick, delay);
+    };
+    setTimeout(tick, 2500);
+  }
+
+  // 6. Binary texture behind the hero
+  const binaryBg = document.getElementById('binaryBg');
+  if (binaryBg) {
+    const rows = 40;
+    const cols = 160;
+    let text = '';
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        text += Math.random() > 0.5 ? '1' : '0';
+        if (c % 8 === 7) text += ' ';
+      }
+      text += '\n';
+    }
+    binaryBg.textContent = text;
+  }
+
+  // 7. Back to top button click
   const backToTopBtn = document.getElementById('backToTop');
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {

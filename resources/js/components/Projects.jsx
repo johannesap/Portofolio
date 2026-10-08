@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 export default function Projects({ projects }) {
   const getBadgeClass = (type) => {
@@ -14,25 +15,21 @@ export default function Projects({ projects }) {
   };
 
   return (
-    <section id="projects" className="bg-[#252b36] py-20 lg:py-28 border-t border-white/5">
+    <section id="projects" className="bg-[#111820]/70 py-20 lg:py-28 border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-['Oswald'] text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white mb-2">
-            Proyek & <span className="text-[#f8be14]">Hak Cipta (HAKI)</span>
-          </h2>
-          <div className="w-16 h-1 bg-[#f8be14] mx-auto mb-4 rounded-full" />
-          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-            Karya teknologi, penelitian kecerdasan artifisial, dan karya cipta terdaftar resmi
-          </p>
-        </div>
+        <SectionHeader
+          index="03"
+          title="Proyek &"
+          highlight="Hak Cipta (HAKI)"
+          subtitle="Karya teknologi, penelitian kecerdasan artifisial, dan karya cipta terdaftar resmi"
+        />
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {(projects || []).map((project) => (
             <div
               key={project.id}
-              className="bg-[#1e2229] border border-white/10 hover:border-[#f8be14]/50 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl group"
+              className="bg-[#161b22] border border-white/10 hover:border-[#4ade80]/50 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl group"
             >
               {/* Thumbnail Container */}
               <div className="relative h-52 overflow-hidden bg-slate-900">
@@ -56,11 +53,11 @@ export default function Projects({ projects }) {
               {/* Body */}
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center justify-between text-xs font-semibold text-slate-400 mb-2">
-                  <span className="text-[#f8be14] font-bold">{project.year}</span>
+                  <span className="text-[#4ade80] font-bold">{project.year}</span>
                   <span>{project.category}</span>
                 </div>
 
-                <h3 className="font-['Oswald'] text-xl font-bold text-white mb-3 leading-snug group-hover:text-[#f8be14] transition-colors">
+                <h3 className="font-mono text-xl font-bold text-white mb-3 leading-snug group-hover:text-[#4ade80] transition-colors">
                   {project.title}
                 </h3>
 
@@ -73,7 +70,7 @@ export default function Projects({ projects }) {
                   {(project.tags || []).map((tag, tIdx) => (
                     <span
                       key={tIdx}
-                      className="bg-[#f8be14]/10 border border-[#f8be14]/20 text-[#f8be14] px-2.5 py-0.5 rounded text-xs font-medium"
+                      className="bg-[#4ade80]/10 border border-[#4ade80]/20 text-[#4ade80] px-2.5 py-0.5 rounded text-xs font-medium"
                     >
                       {tag}
                     </span>

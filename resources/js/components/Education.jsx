@@ -1,19 +1,16 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 export default function Education({ education }) {
   return (
-    <section id="education" className="bg-[#1e2229] py-20 lg:py-28">
+    <section id="education" className="bg-transparent py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-['Oswald'] text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white mb-2">
-            Jejak <span className="text-[#f8be14]">Pendidikan</span>
-          </h2>
-          <div className="w-16 h-1 bg-[#f8be14] mx-auto mb-4 rounded-full" />
-          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-            Riwayat akademik formal dari jenjang pendidikan dasar hingga gelar sarjana
-          </p>
-        </div>
+        <SectionHeader
+          index="04"
+          title="Jejak"
+          highlight="Pendidikan"
+          subtitle="Riwayat akademik formal dari jenjang pendidikan dasar hingga gelar sarjana"
+        />
 
         {/* Education Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -22,8 +19,8 @@ export default function Education({ education }) {
               key={index}
               className={`rounded-2xl p-6 flex flex-col transition-all duration-300 transform hover:-translate-y-1.5 hover:shadow-xl border ${
                 index === 0
-                  ? 'bg-[#252b36] border-[#f8be14]/40 shadow-lg'
-                  : 'bg-[#252b36]/60 border-white/5 hover:border-[#f8be14]/30'
+                  ? 'bg-[#161b22] border-[#4ade80]/40 shadow-lg'
+                  : 'bg-[#161b22]/60 border-white/5 hover:border-[#4ade80]/30'
               }`}
             >
               {/* Institution Logo */}
@@ -36,11 +33,11 @@ export default function Education({ education }) {
                 />
               </div>
 
-              <span className="text-xs font-bold text-[#f8be14] uppercase tracking-wider mb-1">
+              <span className="text-xs font-bold text-[#4ade80] uppercase tracking-wider mb-1">
                 {edu.period}
               </span>
 
-              <h3 className="font-['Oswald'] text-lg sm:text-xl font-bold text-white mb-1 leading-snug">
+              <h3 className="font-mono text-lg sm:text-xl font-bold text-white mb-1 leading-snug">
                 {edu.school}
               </h3>
 
@@ -58,7 +55,7 @@ export default function Education({ education }) {
                   <i className="fa-solid fa-star text-amber-400 text-xs"></i>
                   {edu.score_label}:
                 </span>
-                <strong className="text-[#f8be14] font-bold text-sm sm:text-base">
+                <strong className="text-[#4ade80] font-bold text-sm sm:text-base">
                   {edu.score}
                 </strong>
               </div>

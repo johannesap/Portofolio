@@ -16,7 +16,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -24,7 +24,7 @@
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/main.jsx'])
 </head>
-<body class="bg-[#1e2229] text-white font-sans antialiased selection:bg-[#f8be14] selection:text-black">
+<body class="font-sans antialiased selection:bg-[#4ade80] selection:text-[#04130a]">
     <div id="app"></div>
 </body>
 </html>

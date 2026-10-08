@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer({ profile }) {
   return (
-    <footer className="bg-[#14171d] border-t border-white/5 pt-16 pb-8 text-slate-400">
+    <footer className="bg-[#090c10] border-t border-white/5 pt-16 pb-8 text-slate-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/5">
           {/* Brand */}
@@ -13,8 +13,9 @@ export default function Footer({ profile }) {
                 alt="Johannes Anugrah Prawira"
                 className="h-10 w-auto rounded"
               />
-              <span className="font-['Oswald'] text-2xl font-bold tracking-wider text-white">
-                JAP<span className="text-[#f8be14]">.DEV</span>
+              <span className="font-mono text-xl font-bold text-white">
+                <span className="text-[#22d3ee]">&lt;</span>JAP<span className="text-[#4ade80]">.dev</span>
+                <span className="text-[#22d3ee]"> /&gt;</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed max-w-md text-slate-400">
@@ -24,37 +25,37 @@ export default function Footer({ profile }) {
 
           {/* Nav Links */}
           <div className="md:col-span-3">
-            <h4 className="font-['Oswald'] text-lg font-bold text-white uppercase tracking-wider mb-4">
+            <h4 className="font-mono text-lg font-bold text-white uppercase tracking-wider mb-4">
               Navigasi Cepat
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#home" className="hover:text-[#f8be14] transition-colors">
+                <a href="#home" className="hover:text-[#4ade80] transition-colors">
                   Beranda
                 </a>
               </li>
               <li>
-                <a href="#about-me" className="hover:text-[#f8be14] transition-colors">
+                <a href="#about-me" className="hover:text-[#4ade80] transition-colors">
                   Tentang Saya
                 </a>
               </li>
               <li>
-                <a href="#experience" className="hover:text-[#f8be14] transition-colors">
+                <a href="#experience" className="hover:text-[#4ade80] transition-colors">
                   Pengalaman Kerja
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-[#f8be14] transition-colors">
+                <a href="#projects" className="hover:text-[#4ade80] transition-colors">
                   Proyek & HAKI
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-[#f8be14] transition-colors">
+                <a href="#skills" className="hover:text-[#4ade80] transition-colors">
                   Keahlian Teknis
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#f8be14] transition-colors">
+                <a href="#contact" className="hover:text-[#4ade80] transition-colors">
                   Hubungi Saya
                 </a>
               </li>
@@ -63,7 +64,7 @@ export default function Footer({ profile }) {
 
           {/* Social Links */}
           <div className="md:col-span-3">
-            <h4 className="font-['Oswald'] text-lg font-bold text-white uppercase tracking-wider mb-4">
+            <h4 className="font-mono text-lg font-bold text-white uppercase tracking-wider mb-4">
               Koneksi Sosial
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -72,7 +73,7 @@ export default function Footer({ profile }) {
                   href={profile?.socials?.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#f8be14] transition-colors flex items-center gap-2"
+                  className="hover:text-[#4ade80] transition-colors flex items-center gap-2"
                 >
                   <i className="fa-brands fa-linkedin text-blue-400"></i>
                   <span>LinkedIn</span>
@@ -83,7 +84,7 @@ export default function Footer({ profile }) {
                   href={profile?.socials?.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#f8be14] transition-colors flex items-center gap-2"
+                  className="hover:text-[#4ade80] transition-colors flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github text-white"></i>
                   <span>GitHub</span>
@@ -92,7 +93,7 @@ export default function Footer({ profile }) {
               <li>
                 <a
                   href={`mailto:${profile?.email}`}
-                  className="hover:text-[#f8be14] transition-colors flex items-center gap-2"
+                  className="hover:text-[#4ade80] transition-colors flex items-center gap-2"
                 >
                   <i className="fa-solid fa-envelope text-red-400"></i>
                   <span>Email Langsung</span>
@@ -103,7 +104,7 @@ export default function Footer({ profile }) {
                   href={profile?.socials?.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#f8be14] transition-colors flex items-center gap-2"
+                  className="hover:text-[#4ade80] transition-colors flex items-center gap-2"
                 >
                   <i className="fa-brands fa-whatsapp text-emerald-400"></i>
                   <span>WhatsApp Chat</span>
@@ -113,7 +114,7 @@ export default function Footer({ profile }) {
           </div>
         </div>
 
-        <div className="pt-8 text-center text-xs text-slate-500">
+        <div className="pt-8 text-center font-mono text-xs text-slate-500">
           <p>© 2026 Johannes Anugrah Prawira. All rights reserved. Powered by Laravel + React + Tailwind CSS.</p>
         </div>
       </div>

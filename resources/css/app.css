@@ -11,25 +11,43 @@
         "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
-    --color-brand-primary: #1e2229;
-    --color-brand-secondary: #252b36;
-    --color-brand-tertiary: #2f3644;
-    --color-brand-yellow: #f8be14;
-    --color-brand-yellow-hover: #e5ac07;
-    --font-heading: "Oswald", sans-serif;
-    --font-display: "Anton", sans-serif;
+    --color-brand-primary: #0d1117;
+    --color-brand-secondary: #111820;
+    --color-brand-tertiary: #1c2430;
+    --color-brand-panel: #161b22;
+    --color-brand-accent: #4ade80;
+    --color-brand-accent-hover: #22c55e;
+    --color-brand-cyan: #22d3ee;
+    --font-heading: "JetBrains Mono", ui-monospace, monospace;
+    --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, Consolas, monospace;
     --font-sans: "Inter", system-ui, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
+/* Terminal / IDE backdrop: dark canvas with a faint grid */
 body {
-    background-color: #1e2229;
-    color: #ffffff;
+    background-color: #0d1117;
+    background-image:
+        linear-gradient(rgba(240, 246, 252, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240, 246, 252, 0.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #e6edf3;
     font-family: "Inter", system-ui, sans-serif;
     overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 /* Custom scrollbar */
@@ -37,12 +55,12 @@ body {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #1e2229;
+    background: #0d1117;
 }
 ::-webkit-scrollbar-thumb {
-    background: #2f3644;
+    background: #1c2430;
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #f8be14;
+    background: #4ade80;
 }

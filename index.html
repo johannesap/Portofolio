@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -38,7 +38,7 @@
       <div class="wrapper nav-container">
         <a href="#home" class="logo">
           <img src="image/logo.png" alt="Johannes Anugrah Prawira Logo" />
-          <span class="logo-text">JAP<span>.DEV</span></span>
+          <span class="logo-text">JAP<span>.dev</span></span>
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
@@ -67,48 +67,59 @@
 
     <!-- Hero / Jumbotron -->
     <header id="home">
-      <div class="header-opacity"></div>
-      <div class="header-jumbotron">
-        <div class="badge-hero">
-          <i class="fa-solid fa-hand-wave"></i> HALO! SAYA
-        </div>
-        <h1>Johannes Anugrah Prawira</h1>
-        <div class="hero-roles">
-          <span class="role-item">Informatics Engineering Graduate</span>
-          <span class="role-divider">•</span>
-          <span class="role-item">Data Science & ML</span>
-          <span class="role-divider">•</span>
-          <span class="role-item">IT Trainer & Web Developer</span>
-        </div>
-        <p class="hero-desc">
-          Lulusan S1 Teknik Informatika Universitas Gunadarma (IPK 3.79 / 4.00). Memiliki keahlian praktis dalam Data Science (Python, Streamlit), Web Development (PHP, MySQL), serta pengalaman pengajaran dan kepemimpinan operasional sebagai Asisten Lab Fisika dan Koordinator Organisasi.
-        </p>
+      <div class="header-opacity" id="binaryBg" aria-hidden="true"></div>
+      <div class="wrapper hero-layout">
+        <div class="header-jumbotron">
+          <div class="badge-hero">
+            <span class="pulse"></span> open_to_work = True
+          </div>
+          <p class="hero-prompt">
+            <span class="prompt-user">guest@jap.dev</span>:<span class="prompt-path">~</span>$ whoami
+          </p>
+          <h1>Johannes <span class="hl">Anugrah Prawira</span></h1>
+          <div class="hero-roles" aria-label="Informatics Engineering Graduate, Data Science &amp; ML, IT Trainer &amp; Web Developer">
+            <span class="role-divider">&gt;</span>
+            <span id="typedRole">Informatics Engineering Graduate</span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Lulusan S1 Teknik Informatika Universitas Gunadarma (IPK 3.79 / 4.00). Memiliki keahlian praktis dalam Data Science (Python, Streamlit), Web Development (PHP, MySQL), serta pengalaman pengajaran dan kepemimpinan operasional sebagai Asisten Lab Fisika dan Koordinator Organisasi.
+          </p>
 
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-envelope"></i> HUBUNGI SAYA
-          </a>
-          <a href="CV_Johannes_Anugrah_Prawira.pdf" class="btn btn-outline btn-lg" download>
-            <i class="fa-solid fa-file-arrow-down"></i> UNDUH CV
-          </a>
-          <a href="#projects" class="btn btn-secondary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> LIHAT PORTOFOLIO
-          </a>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-terminal"></i> ./hubungi-saya
+            </a>
+            <a href="CV_Johannes_Anugrah_Prawira.pdf" class="btn btn-outline btn-lg" download>
+              <i class="fa-solid fa-file-arrow-down"></i> cv.pdf
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-code-branch"></i> lihat_proyek()
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://www.linkedin.com/in/johannes-anugrah-prawira/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/johannesap" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:johannespraira@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281350535029" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="hero-social">
-          <a href="https://www.linkedin.com/in/johannes-anugrah-prawira/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/johannesap" target="_blank" rel="noopener noreferrer" title="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="mailto:johannespraira@gmail.com" title="Email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://wa.me/6281350535029" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+        <!-- Code editor window -->
+        <div class="terminal" aria-label="Profil dalam bentuk kode Python">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">~/portfolio/profile.py</span>
+          </div>
+<pre class="terminal-body"><code><span class="ln"><span class="tk-key">class</span> <span class="tk-cls">InformaticsEngineer</span>:</span><span class="ln">    <span class="tk-com"># S1 Teknik Informatika, Universitas Gunadarma</span></span><span class="ln">    <span class="tk-key">def</span> <span class="tk-fn">__init__</span>(<span class="tk-self">self</span>):</span><span class="ln">        <span class="tk-self">self</span>.name   = <span class="tk-str">"Johannes Anugrah Prawira"</span></span><span class="ln">        <span class="tk-self">self</span>.degree = <span class="tk-str">"S.Kom"</span></span><span class="ln">        <span class="tk-self">self</span>.gpa    = <span class="tk-num">3.79</span></span><span class="ln">        <span class="tk-self">self</span>.stack  = [<span class="tk-str">"Python"</span>, <span class="tk-str">"PHP"</span>, <span class="tk-str">"MySQL"</span>,</span><span class="ln">                       <span class="tk-str">"Streamlit"</span>, <span class="tk-str">"Scikit-Learn"</span>]</span><span class="ln">        <span class="tk-self">self</span>.focus  = [<span class="tk-str">"Data Science"</span>, <span class="tk-str">"ML"</span>, <span class="tk-str">"Web Dev"</span>]</span><span class="ln"></span><span class="ln">    <span class="tk-key">def</span> <span class="tk-fn">contribute</span>(<span class="tk-self">self</span>, team):</span><span class="ln">        <span class="tk-key">return</span> <span class="tk-str">f"Siap berkontribusi untuk </span>{team}<span class="tk-str">!"</span></span><span class="ln"></span><span class="ln"><span class="tk-com">&gt;&gt;&gt; </span>InformaticsEngineer().<span class="tk-fn">contribute</span>(<span class="tk-str">"Anda"</span>)</span><span class="ln"><span class="tk-out">'Siap berkontribusi untuk Anda!'</span></span></code></pre>
         </div>
       </div>
     </header>
@@ -933,7 +944,7 @@
         <div class="footer-brand">
           <div class="logo">
             <img src="image/logo.png" alt="Logo" />
-            <span class="logo-text">JAP<span>.DEV</span></span>
+            <span class="logo-text">JAP<span>.dev</span></span>
           </div>
           <p>
             Portofolio profesional Johannes Anugrah Prawira, S1 Teknik Informatika Universitas Gunadarma. Berfokus pada Data Science, Machine Learning, Web Development, dan IT Training.
