@@ -168,7 +168,25 @@ document.addEventListener('DOMContentLoaded', () => {
     binaryBg.textContent = text;
   }
 
-  // 7. Back to top button click
+  // 7. Certificates: show the first few, toggle the rest
+  const certToggle = document.getElementById('certToggle');
+  const certGrid = document.getElementById('certGrid');
+  if (certToggle && certGrid) {
+    const label = certToggle.querySelector('span');
+    const icon = certToggle.querySelector('i');
+    certToggle.addEventListener('click', () => {
+      const expanded = certGrid.classList.toggle('show-all');
+      certToggle.setAttribute('aria-expanded', String(expanded));
+      label.textContent = expanded
+        ? 'Tampilkan Lebih Sedikit'
+        : `Lihat Semua Sertifikat (${certToggle.dataset.total})`;
+      icon.className = expanded ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+      // Collapsing removes a lot of height; bring the section back into view
+      if (!expanded) document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+
+  // 8. Back to top button click
   const backToTopBtn = document.getElementById('backToTop');
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {

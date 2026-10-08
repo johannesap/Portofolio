@@ -141,7 +141,7 @@ export const defaultPortfolioData = {
       year: '2026',
       badge: 'HAKI Resmi Kemenkumham RI (001226719)',
       badge_type: 'haki',
-      image: '/image/course/free-1.jpg',
+      image: '/image/projects/project-smart-e-test.jpg',
       demo: 'https://smpn199.vercel.app/',
       description:
         'Pemegang Hak Cipta resmi bersama tim (No. Pencatatan: 001226719) yang terdaftar di Kementerian Hukum RI. Platform web komprehensif untuk otomatisasi ujian dan pengelolaan nilai siswa sekolah menengah pertama, diperkaya fitur Chatbot AI interaktif guna membantu asistensi belajar siswa.',
@@ -154,7 +154,7 @@ export const defaultPortfolioData = {
       year: '2026',
       badge: 'Skripsi S1 Teknik Informatika',
       badge_type: 'thesis',
-      image: '/image/course/free-2.jpg',
+      image: '/image/projects/project-diabetes-streamlit.jpg',
       demo: 'https://aplikasi-klasifikasi-diabetes-melitus.streamlit.app/',
       description:
         'Penelitian skripsi mandiri mengimplementasikan model klasifikasi Machine Learning dengan algoritma Logistic Regression, diintegrasikan ke dalam antarmuka web interaktif berbasis framework Streamlit untuk deteksi dan skrining resiko diabetes melitus pasien secara akurat.',
@@ -276,6 +276,32 @@ export const defaultPortfolioData = {
   ],
   certifications: [
     {
+      id: 9,
+      title: 'Hak Cipta (HAKI) Resmi Program Komputer Smart E-Test',
+      issuer: 'Kementerian Hukum Republik Indonesia',
+      period: 'Mei 2026',
+      badge: 'Pencatatan No. 001226719',
+      credential_id: 'No. 001226719',
+      file: '/certificates/sertifikat-haki-smart-e-test-001226719.pdf',
+      image: '/image/certificates/cert-haki-smart-e-test.jpg',
+      skills: ['Hak Cipta RI', 'AI Chatbot', 'Web System Architecture'],
+      description:
+        'Surat Pencatatan Ciptaan resmi (No. 001226719) untuk karya sistem informasi manajemen pengelolaan nilai dan ujian SMP berbasis AI dengan fitur Chatbot.'
+    },
+    {
+      id: 15,
+      title: 'Oracle untuk Tingkat Menengah',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Agustus 2025',
+      badge: 'Oracle Intermediate • PL/SQL',
+      credential_id: 'No. 556813',
+      file: '/certificates/sertifikat-oracle-menengah-556813.pdf',
+      image: '/image/certificates/cert-oracle-menengah.jpg',
+      skills: ['Oracle Database', 'Constraints', 'Views', 'Sub Query', 'Explicit Cursors', 'Exception Handling'],
+      description:
+        'Pelatihan Oracle tingkat menengah mencakup pembuatan & pengelolaan tabel, constraint, view, query multi-tabel, sub query, explicit cursors, serta penanganan exception di PL/SQL.'
+    },
+    {
       id: 1,
       title: 'Pemrograman C# untuk Tingkat Menengah',
       issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
@@ -302,6 +328,58 @@ export const defaultPortfolioData = {
         'Sertifikasi perancangan antarmuka digital mencakup riset UX, teori grafis & tipografi, wireframing, pemanfaatan komponen Figma, Auto-layout, dan pembuatan prototipe interaktif.'
     },
     {
+      id: 11,
+      title: 'Dasar Bahasa Pemrograman JavaScript',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'September 2025',
+      badge: 'JavaScript Fundamental',
+      credential_id: 'No. 009028',
+      file: '/certificates/sertifikat-javascript-dasar-009028.pdf',
+      image: '/image/certificates/cert-javascript-dasar.jpg',
+      skills: ['JavaScript', 'Variables & Data Types', 'Control Flow', 'Array', 'OOP JavaScript'],
+      description:
+        'Pelatihan dasar JavaScript mencakup struktur program, variabel & tipe data, operator, array, percabangan, perulangan, serta pemrograman berorientasi objek di JavaScript.'
+    },
+    {
+      id: 10,
+      title: 'Dasar Perancangan Aplikasi Web',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'September 2025',
+      badge: 'Web Application Design',
+      credential_id: 'No. 142759',
+      file: '/certificates/sertifikat-perancangan-aplikasi-web-142759.pdf',
+      image: '/image/certificates/cert-perancangan-aplikasi-web.jpg',
+      skills: ['System Analysis', 'Database Design', 'UI Design', 'PHP', 'XAMPP'],
+      description:
+        'Pelatihan perancangan aplikasi berbasis web mencakup analisis sistem, perancangan database, perancangan user interface, serta implementasi menggunakan PHP dan XAMPP.'
+    },
+    {
+      id: 14,
+      title: 'Google Gemini Arena Workshop (5 Sesi)',
+      issuer: 'Google Gemini Arena × Universitas Gunadarma',
+      period: 'Januari 2026',
+      badge: 'Certificate of Attendance',
+      credential_id: '5 Sesi Workshop',
+      file: '/certificates/sertifikat-google-gemini-arena-2026.pdf',
+      image: '/image/certificates/cert-google-gemini-arena.jpg',
+      skills: ['Visual Problem Solving', 'AI Literature Review', 'AI Resume Crafting', 'Prompt to Slide', 'AI Research'],
+      description:
+        'Mengikuti 5 sesi workshop Google Gemini Arena (22–23 Januari 2026): The Visual Solver, Literature Review Masterclass, Career Hack 101, Innovation Lab: From Prompt to Slide, dan AI Research Accelerator Lab.'
+    },
+    {
+      id: 12,
+      title: 'Membangun Website Menggunakan HTML 5',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Agustus 2025',
+      badge: 'HTML5 Web Development',
+      credential_id: 'No. 313420',
+      file: '/certificates/sertifikat-html5-website-313420.pdf',
+      image: '/image/certificates/cert-html5-website.jpg',
+      skills: ['HTML5', 'Semantic Elements', 'Audio & Video', 'Canvas API', 'Website Layout'],
+      description:
+        'Pelatihan membangun website dengan HTML5 mencakup heading, tabel & list, elemen audio, video, section & article, menggambar dengan Canvas, hingga membuat website sederhana.'
+    },
+    {
       id: 3,
       title: 'Dasar Pemrograman Berbasis Web',
       issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
@@ -313,6 +391,19 @@ export const defaultPortfolioData = {
       skills: ['Web Programming', 'Go Language', 'J2EE & Servlet', 'JSP', '.NET Framework', 'C#', 'ASP.NET'],
       description:
         'Sertifikasi fundamental rekayasa web mencakup pengantar bahasa Go, arsitektur enterprise J2EE & Servlet, Java Server Pages (JSP), serta integrasi .NET Framework dan C# ASP.NET.'
+    },
+    {
+      id: 16,
+      title: 'Oracle untuk Tingkat Pemula',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Agustus 2024',
+      badge: 'Oracle Beginner • PL/SQL',
+      credential_id: 'No. 264836',
+      file: '/certificates/sertifikat-oracle-pemula-264836.pdf',
+      image: '/image/certificates/cert-oracle-pemula.jpg',
+      skills: ['Oracle 11g', 'Database Creation', 'User Management', 'Single-Row Functions', 'PL/SQL'],
+      description:
+        'Pelatihan dasar Oracle mencakup instalasi Oracle 11g, pembuatan database & user, single-row functions, pengenalan PL/SQL, deklarasi variabel, serta interaksi dengan Oracle Server.'
     },
     {
       id: 4,
@@ -341,45 +432,6 @@ export const defaultPortfolioData = {
         'Sertifikasi perancangan dan manajemen database relasional, mempraktikkan DDL, DML, dan query SELECT lanjutan pada MySQL, SQL Server, dan Oracle Database.'
     },
     {
-      id: 10,
-      title: 'Dasar Perancangan Aplikasi Web',
-      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'September 2025',
-      badge: 'Web Application Design',
-      credential_id: 'No. 142759',
-      file: '/certificates/sertifikat-perancangan-aplikasi-web-142759.pdf',
-      image: '/image/certificates/cert-perancangan-aplikasi-web.jpg',
-      skills: ['System Analysis', 'Database Design', 'UI Design', 'PHP', 'XAMPP'],
-      description:
-        'Pelatihan perancangan aplikasi berbasis web mencakup analisis sistem, perancangan database, perancangan user interface, serta implementasi menggunakan PHP dan XAMPP.'
-    },
-    {
-      id: 11,
-      title: 'Dasar Bahasa Pemrograman JavaScript',
-      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'September 2025',
-      badge: 'JavaScript Fundamental',
-      credential_id: 'No. 009028',
-      file: '/certificates/sertifikat-javascript-dasar-009028.pdf',
-      image: '/image/certificates/cert-javascript-dasar.jpg',
-      skills: ['JavaScript', 'Variables & Data Types', 'Control Flow', 'Array', 'OOP JavaScript'],
-      description:
-        'Pelatihan dasar JavaScript mencakup struktur program, variabel & tipe data, operator, array, percabangan, perulangan, serta pemrograman berorientasi objek di JavaScript.'
-    },
-    {
-      id: 12,
-      title: 'Membangun Website Menggunakan HTML 5',
-      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'Agustus 2025',
-      badge: 'HTML5 Web Development',
-      credential_id: 'No. 313420',
-      file: '/certificates/sertifikat-html5-website-313420.pdf',
-      image: '/image/certificates/cert-html5-website.jpg',
-      skills: ['HTML5', 'Semantic Elements', 'Audio & Video', 'Canvas API', 'Website Layout'],
-      description:
-        'Pelatihan membangun website dengan HTML5 mencakup heading, tabel & list, elemen audio, video, section & article, menggambar dengan Canvas, hingga membuat website sederhana.'
-    },
-    {
       id: 13,
       title: 'Instalasi LAN Nirkabel',
       issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
@@ -393,43 +445,17 @@ export const defaultPortfolioData = {
         'Pelatihan jaringan komputer mencakup pengenalan LAN, teknologi nirkabel, protokol TCP/IP, serta instalasi dan konfigurasi Wireless LAN.'
     },
     {
-      id: 14,
-      title: 'Google Gemini Arena Workshop (5 Sesi)',
-      issuer: 'Google Gemini Arena × Universitas Gunadarma',
-      period: 'Januari 2026',
-      badge: 'Certificate of Attendance',
-      credential_id: '5 Sesi Workshop',
-      file: '/certificates/sertifikat-google-gemini-arena-2026.pdf',
-      image: '/image/certificates/cert-google-gemini-arena.jpg',
-      skills: ['Visual Problem Solving', 'AI Literature Review', 'AI Resume Crafting', 'Prompt to Slide', 'AI Research'],
+      id: 8,
+      title: 'Aptitude Test: Berpikir Abstrak & Penalaran Logika',
+      issuer: 'Universitas Gunadarma',
+      period: 'April 2026',
+      badge: 'Kategori Tinggi (K3)',
+      credential_id: 'No. 695235/AT/FPSI/2026',
+      file: '/certificates/sertifikat-aptitude-test-695235.pdf',
+      image: '/image/certificates/cert-aptitude-test.jpg',
+      skills: ['Abstract Reasoning', 'Logical Problem Solving', 'Psychometrics'],
       description:
-        'Mengikuti 5 sesi workshop Google Gemini Arena (22–23 Januari 2026): The Visual Solver, Literature Review Masterclass, Career Hack 101, Innovation Lab: From Prompt to Slide, dan AI Research Accelerator Lab.'
-    },
-    {
-      id: 15,
-      title: 'Oracle untuk Tingkat Menengah',
-      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'Agustus 2025',
-      badge: 'Oracle Intermediate • PL/SQL',
-      credential_id: 'No. 556813',
-      file: '/certificates/sertifikat-oracle-menengah-556813.pdf',
-      image: '/image/certificates/cert-oracle-menengah.jpg',
-      skills: ['Oracle Database', 'Constraints', 'Views', 'Sub Query', 'Explicit Cursors', 'Exception Handling'],
-      description:
-        'Pelatihan Oracle tingkat menengah mencakup pembuatan & pengelolaan tabel, constraint, view, query multi-tabel, sub query, explicit cursors, serta penanganan exception di PL/SQL.'
-    },
-    {
-      id: 16,
-      title: 'Oracle untuk Tingkat Pemula',
-      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'Agustus 2024',
-      badge: 'Oracle Beginner • PL/SQL',
-      credential_id: 'No. 264836',
-      file: '/certificates/sertifikat-oracle-pemula-264836.pdf',
-      image: '/image/certificates/cert-oracle-pemula.jpg',
-      skills: ['Oracle 11g', 'Database Creation', 'User Management', 'Single-Row Functions', 'PL/SQL'],
-      description:
-        'Pelatihan dasar Oracle mencakup instalasi Oracle 11g, pembuatan database & user, single-row functions, pengenalan PL/SQL, deklarasi variabel, serta interaksi dengan Oracle Server.'
+        'Meraih skor kategori tinggi (K3) dalam uji psikometri logika dan penalaran abstrak, mencerminkan kemampuan analitis tajam dalam memecahkan masalah kompleks.'
     },
     {
       id: 6,
@@ -456,32 +482,6 @@ export const defaultPortfolioData = {
       skills: ['English Fluency', 'Listening Comprehension', 'Pronunciation'],
       description:
         'Menyelesaikan pelatihan intensif kefasihan bertutur kata bahasa Inggris spontan dan kepekaan pemahaman audio listening.'
-    },
-    {
-      id: 8,
-      title: 'Aptitude Test: Berpikir Abstrak & Penalaran Logika',
-      issuer: 'Universitas Gunadarma',
-      period: 'April 2026',
-      badge: 'Kategori Tinggi (K3)',
-      credential_id: 'No. 695235/AT/FPSI/2026',
-      file: '/certificates/sertifikat-aptitude-test-695235.pdf',
-      image: '/image/certificates/cert-aptitude-test.jpg',
-      skills: ['Abstract Reasoning', 'Logical Problem Solving', 'Psychometrics'],
-      description:
-        'Meraih skor kategori tinggi (K3) dalam uji psikometri logika dan penalaran abstrak, mencerminkan kemampuan analitis tajam dalam memecahkan masalah kompleks.'
-    },
-    {
-      id: 9,
-      title: 'Hak Cipta (HAKI) Resmi Program Komputer Smart E-Test',
-      issuer: 'Kementerian Hukum Republik Indonesia',
-      period: 'Mei 2026',
-      badge: 'Pencatatan No. 001226719',
-      credential_id: 'No. 001226719',
-      file: '/certificates/sertifikat-haki-smart-e-test-001226719.pdf',
-      image: '/image/certificates/cert-haki-smart-e-test.jpg',
-      skills: ['Hak Cipta RI', 'AI Chatbot', 'Web System Architecture'],
-      description:
-        'Surat Pencatatan Ciptaan resmi (No. 001226719) untuk karya sistem informasi manajemen pengelolaan nilai dan ujian SMP berbasis AI dengan fitur Chatbot.'
     }
   ]
 };

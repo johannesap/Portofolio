@@ -1625,6 +1625,15 @@ header {
   white-space: nowrap;
 }
 
+.cert-grid:not(.show-all) .cert-extra {
+  display: none;
+}
+
+.cert-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .cert-btn-link {
   display: inline-flex;
   align-items: center;

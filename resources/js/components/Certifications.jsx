@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import SectionHeader from './SectionHeader';
 
+const VISIBLE_COUNT = 6;
+
 export default function Certifications({ certifications }) {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+  const allCerts = certifications || [];
+  const visibleCerts = showAll ? allCerts : allCerts.slice(0, VISIBLE_COUNT);
+
+  const toggleShowAll = () => {
+    if (showAll) document.getElementById('certifications')?.scrollIntoView({ behavior: 'smooth' });
+    setShowAll(!showAll);
+  };
 
   return (
     <section id="certifications" className="bg-[#161b22] py-20 lg:py-28">
@@ -15,8 +25,8 @@ export default function Certifications({ certifications }) {
         />
 
         {/* Certifications Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {(certifications || []).map((cert, index) => (
+        <div id="certGrid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {visibleCerts.map((cert, index) => (
             <div
               key={cert.id || index}
               className="bg-[#1c2128] border border-white/10 hover:border-[#4ade80]/40 rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1.5 hover:shadow-2xl flex flex-col group"
@@ -146,6 +156,21 @@ export default function Certifications({ certifications }) {
             </div>
           ))}
         </div>
+
+        {allCerts.length > VISIBLE_COUNT && (
+          <div className="mt-10 text-center">
+            <button
+              type="button"
+              onClick={toggleShowAll}
+              aria-expanded={showAll}
+              aria-controls="certGrid"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-lg border-2 border-white/15 text-slate-300 font-mono text-sm hover:border-[#4ade80] hover:text-[#4ade80] hover:bg-[#4ade80]/10 transition-colors"
+            >
+              <i className={`fa-solid ${showAll ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+              <span>{showAll ? 'Tampilkan Lebih Sedikit' : `Lihat Semua Sertifikat (${allCerts.length})`}</span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}
