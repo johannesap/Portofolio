@@ -76,6 +76,18 @@ export default function Projects({ projects }) {
                     </span>
                   ))}
                 </div>
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 self-start mt-4 text-sm font-semibold text-[#4ade80] hover:text-white transition-colors"
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    Lihat Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}

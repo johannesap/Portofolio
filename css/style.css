@@ -1237,6 +1237,23 @@ header {
   margin-top: auto;
 }
 
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.project-link:hover {
+  color: #ffffff;
+}
+
 .project-tags span {
   font-family: var(--font-mono);
   background-color: rgba(var(--accent-rgb), 0.1);
