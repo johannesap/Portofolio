@@ -221,8 +221,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  gap: 15px;
 }
 
 .logo {
@@ -233,6 +234,8 @@ nav {
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 700;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .logo img {
@@ -252,27 +255,37 @@ nav {
 .menu {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .menu ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 6px;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
 }
 
 .menu ul li a {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   padding: 8px 12px;
   border-radius: var(--radius-sm);
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: var(--transition);
 }
 
 .menu ul li a:hover,
 .menu ul li a.active {
   color: var(--accent-yellow);
+  background-color: rgba(248, 190, 20, 0.1);
 }
 
 .menu ul li a.active::after {
@@ -283,6 +296,16 @@ nav {
   right: 12px;
   height: 2px;
   background-color: var(--accent-yellow);
+}
+
+.nav-cta {
+  flex-shrink: 0;
+}
+
+.nav-cta .btn {
+  white-space: nowrap;
+  padding: 8px 16px;
+  font-size: 0.9rem;
 }
 
 .menu-toggle {
@@ -1554,8 +1577,44 @@ footer {
   }
 }
 
-/* Tablets & Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+/* Laptops & Tablets Landscape (992px - 1240px) */
+@media (min-width: 992px) and (max-width: 1240px) {
+  .nav-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    gap: 8px;
+  }
+
+  .logo img {
+    height: 34px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu ul {
+    gap: 3px;
+  }
+
+  .menu ul li a {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .nav-cta .btn {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Tablets & Mobile (max-width: 991px) */
+@media (max-width: 991px) {
   .menu-toggle {
     display: block;
   }

@@ -58,28 +58,28 @@ export default function Navbar({ profile }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-3 xl:gap-6">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href="#home" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
             <img
               src="/image/logo.png"
               alt="Johannes Anugrah Prawira"
-              className="h-10 w-auto rounded transition-transform group-hover:scale-105"
+              className="h-9 sm:h-10 w-auto rounded transition-transform group-hover:scale-105"
             />
-            <span className="font-['Oswald'] text-xl tracking-wider font-bold text-white">
+            <span className="font-['Oswald'] text-lg sm:text-xl tracking-wider font-bold text-white whitespace-nowrap">
               JAP<span className="text-[#f8be14]">.DEV</span>
             </span>
           </a>
 
           {/* Desktop Nav Links */}
-          <div className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <div className="hidden lg:flex items-center justify-center gap-1 xl:gap-2">
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+                className={`inline-flex items-center justify-center px-2.5 xl:px-3 py-1.5 xl:py-2 text-xs xl:text-sm font-medium whitespace-nowrap rounded-lg transition-all duration-200 ${
                   activeSection === link.id
-                    ? 'text-[#f8be14] bg-[#f8be14]/10 font-semibold'
+                    ? 'text-[#f8be14] bg-[#f8be14]/15 font-semibold ring-1 ring-[#f8be14]/30'
                     : 'text-slate-300 hover:text-[#f8be14] hover:bg-white/5'
                 }`}
               >
@@ -89,11 +89,11 @@ export default function Navbar({ profile }) {
           </div>
 
           {/* Desktop CTA Button */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center shrink-0">
             <a
               href={profile?.cv_files?.full || '/CV_Johannes_Anugrah_Prawira.pdf'}
               download
-              className="inline-flex items-center gap-2 bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] tracking-wide font-semibold px-4 py-2 rounded-md shadow-md hover:shadow-[#f8be14]/20 transition-all transform hover:-translate-y-0.5 text-sm"
+              className="inline-flex items-center gap-2 bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] tracking-wide font-semibold px-3.5 xl:px-4 py-2 xl:py-2.5 rounded-lg shadow-md hover:shadow-[#f8be14]/20 transition-all transform hover:-translate-y-0.5 text-xs xl:text-sm whitespace-nowrap uppercase"
             >
               <i className="fa-solid fa-download"></i>
               <span>Unduh CV</span>
@@ -123,7 +123,7 @@ export default function Navbar({ profile }) {
               onClick={() => setIsOpen(false)}
               className={`block px-3 py-2.5 rounded-md text-base font-medium transition-all ${
                 activeSection === link.id
-                  ? 'text-[#f8be14] bg-[#f8be14]/10 font-semibold'
+                  ? 'text-[#f8be14] bg-[#f8be14]/15 font-semibold'
                   : 'text-slate-300 hover:text-[#f8be14] hover:bg-white/5'
               }`}
             >
@@ -134,7 +134,7 @@ export default function Navbar({ profile }) {
             <a
               href={profile?.cv_files?.full || '/CV_Johannes_Anugrah_Prawira.pdf'}
               download
-              className="w-full text-center bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] font-semibold py-2.5 rounded-md text-sm tracking-wide"
+              className="w-full text-center bg-[#f8be14] hover:bg-[#e5ac07] text-slate-950 font-['Oswald'] font-semibold py-2.5 rounded-md text-sm tracking-wide uppercase"
             >
               <i className="fa-solid fa-download mr-2"></i>
               Unduh CV Lengkap
