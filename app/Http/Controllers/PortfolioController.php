@@ -438,7 +438,9 @@ class PortfolioController extends Controller
                     'issuer' => 'Universitas Gunadarma',
                     'period' => 'April 2026',
                     'badge' => 'Kategori Tinggi (K3)',
-                    'credential_id' => 'Skor K3',
+                    'credential_id' => 'No. 695235/AT/FPSI/2026',
+                    'file' => '/certificates/sertifikat-aptitude-test-695235.pdf',
+                    'image' => '/image/certificates/cert-aptitude-test.jpg',
                     'skills' => ['Abstract Reasoning', 'Logical Problem Solving', 'Psychometrics'],
                     'description' => 'Meraih skor kategori tinggi (K3) dalam uji psikometri logika dan penalaran abstrak, mencerminkan kemampuan analitis tajam dalam memecahkan masalah kompleks.'
                 ],
