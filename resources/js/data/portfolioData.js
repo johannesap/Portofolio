@@ -274,52 +274,113 @@ export const defaultPortfolioData = {
   ],
   certifications: [
     {
-      title: 'Pemrograman Web, Rekayasa Perangkat Lunak & Jaringan Komputer',
+      id: 1,
+      title: 'Pemrograman C# untuk Tingkat Menengah',
       issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'Feb 2023 - Sep 2025',
-      badge: 'Junior Web Programmer',
+      period: 'Februari 2025',
+      badge: 'C# Intermediate • Web API',
+      credential_id: 'No. 967868',
+      file: '/certificates/sertifikat-csharp-menengah-967868.pdf',
+      image: '/image/certificates/cert-csharp-menengah.jpg',
+      skills: ['ASP.NET', 'Web Form', 'ASP.NET Razor (MVC)', 'ADO.NET', 'Web API', 'Entity Framework'],
       description:
-        'Menyelesaikan skema pelatihan menyeluruh mencakup HTML5/CSS, OOP C#, pembuatan aplikasi web dinamis, serta arsitektur jaringan TCP/IP dan konfigurasi LAN nirkabel.'
+        'Sertifikasi kompetensi tingkat menengah pemrograman C# dan ekosistem .NET, menguasai arsitektur ASP.NET Razor MVC, ADO.NET, serta perancangan Web API terintegrasi Entity Framework.'
     },
     {
-      title: 'Manajemen Basis Data Relasional (MySQL & Oracle 11g)',
+      id: 2,
+      title: 'Desain Antarmuka dan Prototyping dengan Figma',
       issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
-      period: 'Agu 2023 - Agu 2025',
-      badge: 'Database Management',
+      period: 'September 2025',
+      badge: 'UI/UX Design & Prototyping',
+      credential_id: 'No. 669174',
+      file: '/certificates/sertifikat-figma-prototyping-669174.pdf',
+      image: '/image/certificates/cert-figma-prototyping.jpg',
+      skills: ['UI/UX Design', 'Figma', 'Wireframing', 'Interactive Prototyping', 'Auto-layout', 'Design Systems'],
       description:
-        'Praktek perancangan database relasional, DDL/DML, administrasi user, Sub Queries kompleks, serta pemrograman Explicit Cursors pada platform Oracle 11g.'
+        'Sertifikasi perancangan antarmuka digital mencakup riset UX, teori grafis & tipografi, wireframing, pemanfaatan komponen Figma, Auto-layout, dan pembuatan prototipe interaktif.'
     },
     {
+      id: 3,
+      title: 'Dasar Pemrograman Berbasis Web',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Februari 2023',
+      badge: 'Fundamental Web Programming',
+      credential_id: 'No. 621671',
+      file: '/certificates/sertifikat-web-programming-dasar-621671.pdf',
+      image: '/image/certificates/cert-web-programming.jpg',
+      skills: ['Web Programming', 'Go Language', 'J2EE & Servlet', 'JSP', '.NET Framework', 'C#', 'ASP.NET'],
+      description:
+        'Sertifikasi fundamental rekayasa web mencakup pengantar bahasa Go, arsitektur enterprise J2EE & Servlet, Java Server Pages (JSP), serta integrasi .NET Framework dan C# ASP.NET.'
+    },
+    {
+      id: 4,
+      title: 'Pemrograman C# untuk Tingkat Pemula',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Februari 2024',
+      badge: 'C# Beginner • OOP',
+      credential_id: 'No. 373314',
+      file: '/certificates/sertifikat-csharp-pemula-373314.pdf',
+      image: '/image/certificates/cert-csharp-pemula.jpg',
+      skills: ['C#', 'OOP', 'Data Structures', 'Web Controller', 'ADO.NET', 'Debugging'],
+      description:
+        'Sertifikasi dasar pemrograman C# mencakup struktur data, logika algoritma & perulangan, Object-Oriented Programming (OOP), web controller dasar, serta konektivitas ADO.NET.'
+    },
+    {
+      id: 5,
+      title: 'Dasar Sistem Manajemen Basis Data',
+      issuer: 'Laboratorium Komputer (LepKom) Universitas Gunadarma',
+      period: 'Agustus 2023',
+      badge: 'Database Management (DBMS)',
+      credential_id: 'No. 828444',
+      file: '/certificates/sertifikat-dbms-dasar-828444.pdf',
+      image: '/image/certificates/cert-dbms-dasar.jpg',
+      skills: ['MySQL', 'SQL Server', 'Oracle Database', 'DDL & DML', 'Relational Database'],
+      description:
+        'Sertifikasi perancangan dan manajemen database relasional, mempraktikkan DDL, DML, dan query SELECT lanjutan pada MySQL, SQL Server, dan Oracle Database.'
+    },
+    {
+      id: 6,
       title: 'Komunikasi & Bahasa Inggris (Speaking & Writing)',
       issuer: 'Mr. BOB English Camp Pare, Kediri',
       period: 'Lembaga Bahasa Pare',
       badge: 'Grade A (Sangat Memuaskan)',
+      credential_id: 'Grade A',
+      skills: ['Public Speaking', 'English Writing', 'Active Communication'],
       description:
-        'Lulus predikat Grade A pada program Speaking & Writing, Tic Talk, dan Speak Up 1 untuk pengasahan public speaking dan komunikasi aktif bahasa Inggris.'
+        'Lulus predikat Grade A pada program Speaking & Writing, Tic Talk, dan Speak Up 1 untuk keahlian komunikasi publik dan presentasi aktif bahasa Inggris.'
     },
     {
+      id: 7,
       title: 'The Therapy I English Fluency & Listening Comprehension',
       issuer: 'ELFAST English Course, Pare',
       period: 'Lembaga Bahasa Pare',
       badge: 'Grade B+ • Fluency',
+      credential_id: 'Grade B+',
+      skills: ['English Fluency', 'Listening Comprehension', 'Pronunciation'],
       description:
         'Menyelesaikan pelatihan intensif kefasihan bertutur kata bahasa Inggris spontan dan kepekaan pemahaman audio listening.'
     },
     {
+      id: 8,
       title: 'Aptitude Test: Berpikir Abstrak & Penalaran Logika',
       issuer: 'Universitas Gunadarma',
       period: 'April 2026',
       badge: 'Kategori Tinggi (K3)',
+      credential_id: 'Skor K3',
+      skills: ['Abstract Reasoning', 'Logical Problem Solving', 'Psychometrics'],
       description:
         'Meraih skor kategori tinggi (K3) dalam uji psikometri logika dan penalaran abstrak, mencerminkan kemampuan analitis tajam dalam memecahkan masalah kompleks.'
     },
     {
+      id: 9,
       title: 'Hak Cipta (HAKI) Resmi Program Komputer Smart E-Test',
       issuer: 'Kementerian Hukum Republik Indonesia',
       period: '2026',
       badge: 'Pencatatan No. 001226719',
+      credential_id: 'No. 001226719',
+      skills: ['Hak Cipta RI', 'AI Chatbot', 'Web System Architecture'],
       description:
-        'Surat Pencatatan Ciptaan resmi untuk karya sistem informasi manajemen pengelolaan nilai dan ujian SMP berbasis AI dengan fitur Chatbot.'
+        'Surat Pencatatan Ciptaan resmi (No. 001226719) untuk karya sistem informasi manajemen pengelolaan nilai dan ujian SMP berbasis AI dengan fitur Chatbot.'
     }
   ]
 };
